@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <header class="navmenu">
-        <div class="logo"><a href="#">Mi portafolio</a></div>
-        <nav>
-            <ul>
-                <li><a href="#acerca">Acerca de mí</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul> 
-        </nav>
-    </header>
+<header class="navmenu">
+    <div class="logo"><a href="#">MiPortafolio</a></div>
+    <nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca">Acerca de mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
     <section class="first-section">
         <h1 class="first-section-title">Bienvenido a mi página web</h1>
@@ -29,12 +35,12 @@
     </section>
 
     <main>
-       
+
         <section id="acerca">
             <h2>Acerca de mí</h2>
             <div class="info-container">
                 <div class="card">
-                    <img class="Fotocard" src="IMG_20241225_165817_791.jpg" alt="Foto de Duván Romero Altamar">
+                    <img class="Fotocard" src="./img/IMG_20241225_165817_791.jpg" alt="Foto de Duván Romero Altamar">
                 </div>
                 <div class="text-card">
                     <p>Soy <strong>Duván Romero Altamar</strong>, desarrollador web de 15 años, apasionado por la
@@ -43,57 +49,55 @@
             </div>
         </section>
 
-        <section id="habilidades">
-            <h2>Mis Habilidades</h2>
-            <div>
-                <div class="skill-card">
-                    <h3>HTML</h3>
-                    <div class="progress-bar">
-                        <span data-progress="90"></span> </div>
-                    <div class="progress-text">0% </div>
-                    </div>
+        <section id="habilidades" class="skills-section">
+            <h2>🚀 Mis Habilidades</h2>
+        
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <span style="--progress:90%"></span>
                 </div>
-                
-                <div class="skill-card">
-                    <h3>CSS</h3>
-                    <div class="progress-bar">
-                        <span data-progress="80"></span> </div>
-                    <div class="progress-text">0%</div>
+                <div class="progress-text">90%</div>
+            </div>
+        
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <span style="--progress:80%"></span>
                 </div>
-
-                <div class="skill-card">
-                    <h3>JavaScript</h3>
-                    <div class="progress-bar">
-                        <span data-progress="70"></span> </div>
-                    <div class="progress-text">0%</div>
+                <div class="progress-text">80%</div>
+            </div>
+        
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <span style="--progress:70%"></span>
                 </div>
+                <div class="progress-text">70%</div>
             </div>
         </section>
+
 
         <section id="proyectos">
             <h2>Mis Proyectos</h2>
             <p><strong>Sección en construcción...</strong></p>
         </section>
 
-        <section id="contacto">
-            <h2>Contáctame</h2>
-            <p>Email: <a href="mailto:pruebasparatd@gmail.com">pruebasparatd@gmail.com</a></p>
-            <p>Teléfono: <a href="tel:+573239511242">3239511242</a></p>
-            <p>Redes sociales: Instagram <a href="https://instagram.com/duvan.ads" target="_blank">@duvan.ads</a> |
-                Facebook: <a href="#" target="_blank">Duván Romero Altamar</a></p>
-
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="email">Correo:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-
-                <button type="submit" class="btn">Enviar</button>
+        <section id="contacto" class="contact-section hidden">
+            <h2 class="contact-title">🌌 Send me a signal</h2>
+            <p class="contact-subtitle">Transmission channel is open — let’s connect!</p>
+        
+            <form class="contact-form">
+                <input type="text" placeholder="👨‍🚀 Your Name" required>
+                <input type="email" placeholder="📡 Your Email" required>
+                <textarea placeholder="🌠 Your Message" required></textarea>
+                <button type="submit">🚀 Launch Message</button>
             </form>
+        
+            <div class="contact-info">
+                <p>📧 galaxy.mail@example.com</p>
+                <p>📞 +57 123 456 789</p>
+            </div>
         </section>
     </main>
 
@@ -101,6 +105,7 @@
         <p>“Este portafolio es un reflejo de mi pasión por la tecnología, la disciplina y el trabajo constante.”</p>
         <p>© 2025 Duván Romero Altamar - Todos los derechos reservados.</p>
     </footer>
+     <script src="./script.js"></script>
 
 </body>
 
